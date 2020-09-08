@@ -18,8 +18,8 @@ export class LoginComponent {
   login() {
     this.LoginService.Login(this.model).subscribe(
       data => {
-        if (data == "Success") {
-          this.router.navigate(['/Dashboard']);
+        if (data == "Login Success") {
+          this.router.navigate(['/dashboard']);
         }
         else {
           this.errorMessage = data.Message;

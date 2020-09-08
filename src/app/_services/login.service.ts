@@ -22,6 +22,6 @@ export class LoginService {
   }
   CreateUser(register: Register) {
     //const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-    return this.http.post<Register[]>(this.Url + 'RegisterUser/', register)
+    return this.http.post<Register[]>(this.Url + 'registeruser/', register)
   }
 }
